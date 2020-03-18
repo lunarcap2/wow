@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS document */
+
+/* font */
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap');
+/*base*/
+body,ul,li,ol,dl,dt,dd,p,h1,h2,h3,h4,h5,h6,div,legend,input{margin:0;padding:0;}
+body{font:normal 12px "맑은 고딕",Malgun Gothic;}
+img{border:0;vertical-align:top;}
+ul{list-style:none;}
+a{text-decoration:none;}
+body{overflow-x:hidden; overflow-y: auto;}
+
+
+/* nanum-pen-script-regular - korean */
+@font-face {
+  font-family: 'Nanum Pen Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/wow/fonts/nanum-pen-script-v15-korean-regular.eot'); /* IE9 Compat Modes */
+  src: local('Nanum Pen'), local('NanumPen'),
+       url('/wow/fonts/nanum-pen-script-v15-korean-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/wow/fonts/nanum-pen-script-v15-korean-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/wow/fonts/nanum-pen-script-v15-korean-regular.woff') format('woff'), /* Modern Browsers */
+       url('/wow/fonts/nanum-pen-script-v15-korean-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/wow/fonts/nanum-pen-script-v15-korean-regular.svg#NanumPenScript') format('svg'); /* Legacy iOS */
+}
+.gnb_r{font-family: 'Nanum Pen Script', cursive;}
+.gnb_r li{font-family: 'Nanum Pen Script', cursive;}
+
+/* header */
+
+#header{width:100%;height:200px;position:absolute;top:0;z-index:20;}
+#header .header_logo{margin:0px auto; width:1100px;height:106px; margin-top: 30px;}
+#header .header_logo img{width: 170px;}
+#header .header_logo h1{text-align:center;}
+
+#header .header_menu{width:100%;height:50px;position:absolute;top:100px;}
+#header .nav{margin:0 auto;width:1200px;height:50px;}
+#header .gnb{overflow: hidden; margin-left: 220px;}
+#header .gnb>li{float:left; /*margin-right:31px; margin-left:27px;;line-height:50px;*/ width: 125px; white-space: nowrap; text-align: center; line-height: 50px;}
+#header .gnb>li:nth-child(3){text-align: center;}
+#header .gnb>li:nth-child(4) a{margin: 0 10px;}
+#header .gnb>li:nth-child(5) a{padding-left:20px; box-sizing: border-box;}
+
+
+
+#header .header_menu .header_menu_in{position:relative;}
+#header .logo2{position:absolute;top:50%;left:50%;transform: translate(-420%,-50%);height:50px;line-height:50px;display:none;}
+/*#header .logo2 a{color:#fff;font-size:18px;font-weight:bold;}*/
+
+
+/*.menu_back{width: 100%; height: 50px;background: rgba(101,31,16,0.2); display: none; margin-top: 63px;}*/
+
+/* 서브메뉴 */
+
+#header .submenu{display: none; background: rgba(101,31,16,0.2);}
+#header .submenu>li{width: 125px; height: 45px; line-height: 45px;}
+#header .submenu>li a{width: 125px; height: 45px; display: block; color: #bccbb9; font-size: 16px; transition: all 0.5s;}
+#header .submenu a:hover{/*background: #888;*/ color:#f6fff5;}
+
+/*
+.gnb li:nth-child(1):hover a {color:#d4164c}
+.gnb li:nth-child(2):hover a { color:#2c6ed5}
+.gnb li:nth-child(3):hover a { color:#ffec6a;}
+.gnb li:nth-child(4):hover a { color:#b9cf90;}	
+.gnb li:nth-child(5):hover a { color:#93C;}
+.gnb li:nth-child(6):hover a { color:#4ED0E2;}
+
+.gnb li:nth-child(1).on a{color:#d4164c;}
+.gnb li:nth-child(2).on a { color:#2c6ed5; border-bottom:2px solid #2c6ed5; }
+.gnb li:nth-child(3).on a { color:#ffec6a; /*border-bottom:2px solid #ffec6a;}
+.gnb li:nth-child(4).on a { color:#b9cf90; /*border-bottom:2px solid #b9cf90;}
+.gnb li:nth-child(5).on a { color:#93C; /*border-bottom:2px solid #93C;}
+.gnb li:nth-child(6).on a {  color:#4ED0E2; /*border-bottom:2px solid #4ED0E2;} */
+
+/* test (현재적용됨) */
+
+.gnb>li>a{width: 200px; height: 60px; font-size: 20px; color: #d8b82b; text-align: center; overflow: hidden; box-sizing: border-box; opacity: 0.8; transition: all 0.5s; font-family: 'Noto Sans KR', sans-serif; font-weight: bold;}
+.header_menu .gnb>li:hover>a{/*font-size: 27px;*/opacity: 1; color: #ffec6a;}
+.header_menu li.on a{font-size: 20px; opacity: 1;} 
+
+
+
+.header_menu .gnb>li:nth-child(1).on a{/*color: #d4164c;*/ color: #d4164c; position: relative; top: 0px;}
+.header_menu .gnb>li:nth-child(2).on a{/*color: #fff;*/ color: #d4164c;}
+.header_menu .gnb>li:nth-child(3).on a{/*color: #ffec6a;*/ color: #d4164c;}
+.header_menu .gnb>li:nth-child(4).on a{/*color: #005a89;*/ color: #d4164c;}
+.header_menu .gnb>li:nth-child(5).on a{/*color: #005a89;*/ color: #d4164c;}
+.header_menu .gnb>li:nth-child(6).on a{/*color: #005a89;*/ color: #d4164c;}
+
+/* scroll down  */
+
+.home{position: relative;}
+.page1 .scroll_down{position: absolute; bottom: 7%; left: 50%; transform: translate(-50%);}
+
+.page1 .scroll_down .down{animation-name:down; animation-duration: 1.5s; animation-iteration-count: infinite;}
+
+@keyframes down{
+    0%{transform: translateY(0);}
+    50%{transform: translateY(25px);}
+    100%{transform: translateY(0);}
+}

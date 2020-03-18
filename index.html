@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>월드 오브 워크래프트</title>
+    <script src="mainjs/jquery-3.4.1.min.js"></script>
+    <script src="mainjs/jquery.scrollTo.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="common/css/common.css">
+    <link rel="stylesheet" type="text/css" href="maincss/main.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/x-icon.png">
+    <link rel="stylesheet" href="maincss/animate-ex.css">
+    <script src="mainjs/main.js"></script>
+    <!-- 폰트  https://google-webfonts-helper.herokuapp.com/fonts  -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    <!--mousewheel -->
+    <script src="mainjs/jquery-ui.min.js"></script>
+    <script src="mainjs/jquery.easing.1.3.js"></script>
+    <script src="mainjs/prefixfree.min.js"></script>
+    <script src="mainjs/jquery.mousewheel.min.js"></script>
+
+    <!-- sec5 슬라이드 -->
+    <script src="mainjs/bestbook_zone.js"></script>
+    <script src="mainjs/jquery.bxslider.min.js"></script>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="header_logo">
+                <h1><a href="#"><img src="images/logo2.png" alt="main_logo"></a></h1>
+            </div> <!-- header_logo// -->
+
+            <div class="header_menu">
+                <div class="header_menu_in">
+                    <nav class="nav">
+                        <ul class="gnb">
+                            <li class="on"><a href="#sec1">메인</a>
+                                <ul class="submenu submenu1">
+                                    <li><a href="#">홈</a></li>
+                                </ul>
+                            </li>
+                            <li class="#sec2 g2"><a href="#sec2">게임</a>
+                                <ul class="submenu submenu2">
+                                    <li onclick="location.href='sub/sub2-1.html'"><a href="sub/sub2-1.html">소개</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#sec3">이야기</a>
+                                <ul class="submenu submenu3">
+                                    <li onclick="location.href='sub/sub3-1.html'"><a href="sub/sub3-1.html">세계관</a></li>
+                                </ul>
+                            </li>
+                            <li class="c2"><a href="#sec4">WOW 클래식</a>
+                                <ul class="submenu submenu4">
+                                    <li><a href="#">특징</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#sec5">샵</a>
+                                <ul class="submenu submenu5">
+                                    <li><a href="#">샵</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#sec6">새소식</a>
+                                <ul class="submenu submenu6">
+                                    <li><a href="#">새소식</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </nav>
+                    <p class="logo2"><a href="#"><img src="images/logo3.png" alt="logo"></a></p>
+                </div> <!-- header_menu_in -->
+
+            </div> <!-- header_menu // -->
+            <!--<div class="menu_back"></div>-->
+
+        </header>
+
+        <div class="gnb_r">
+            <ul>
+                <li class="on"><a href="#sec1"><span class="texm">메인</span></a></li>
+                <li><a href="#sec2"><span class="texm">게임</span></a></li>
+                <li><a href="#sec3"><span class="texm">이야기</span></a></li>
+                <li><a href="#sec4"><span class="texm">WOW 클래식</span></a></li>
+                <li><a href="#sec5"><span class="texm">샵</span></a></li>
+                <li><a href="#sec6"><span class="texm">새소식</span></a></li>
+            </ul>
+        </div> <!-- gnb_r // -->
+
+        <div class="dot_line"></div>
+
+        <section id="sec1" class="page1">
+            <div id="page1" class="pg">
+            </div>
+
+            <video class="video" loop autoplay muted poster="media/Chanel.jpg">
+                <source src="media2/s7_5.mp4">
+                </source>
+            </video>
+            <p class="scroll_down">
+                <img src="images/scroll6.png" alt="dragdown" class="down">
+            </p>
+        </section> <!-- sec1 // -->
+
+        <section id="sec2" class="page2">
+            <div id="page2" class="pg">
+                <p class="section--blue wow fadeInUp">마침내... 거대한 힘이 폭발한다!</p>
+                <h2 class="section--blue wow fadeInUp" data-wow-delay="0.3s">리치 왕의 분노에 맞설 자 누구인가</h2>
+                <ul>
+                    <li class="section--blue wow fadeInUp" data-wow-delay="0.6s">혼돈의 시대, 힘과 지혜로 그의 분노에 맞서라!<br>
+                        지금 새로운 영웅을 위한 강력한 지원이 기다린다!</li>
+                    <li class="section--blue wow fadeInUp" data-wow-delay="0.6s">얼어붙은 왕좌로 올라서고, 스랄을 도와<br>
+                        듀로타에서 오크의 새로운 고향을 만드십시오.</li>
+
+                </ul>
+                <div class="rrr1">
+                    <p class="section--blue wow fadeInLeft" data-wow-delay="1.5s"><img src="images/sec2_img3.png" alt="richking"></p>
+                    <p class="section--blue wow fadeInLeft" data-wow-delay="1.5s"><a href="#">자세히 보기</a></p>
+                </div>
+
+
+                <div class="media2">
+                    <video class="video section--blue wow fadeInUp" data-wow-delay="0.6s" loop autoplay muted poster="media/Chanel.jpg">
+                        <source src="media2/richking_2.mp4">
+                        </source>
+                    </video>
+
+                </div>
+                <p class="tr">리치왕의 분노 트레일러</p>
+            </div>
+
+        </section>
+
+        <section id="sec3" class="page3">
+            <div id="page3" class="pg section--blue wow fadeIn">
+                <p class="section--blue wow fadeInUp">전설적인 캠페인</p>
+                <h2 class="section--blue wow fadeInUp" data-wow-delay="0.3s">월드 오브 워크래프트 대서사시</h2>
+
+
+                <div class="sec3_inner1">
+                    <!--<p class="section--blue wow fadeInDown" data-wow-delay="0.6s">프로즌 쓰론의 가슴 뛰는 사건들을 다시<br>
+                        체험하십시오. 동맹이 무너지고 문명이 충돌<br>
+                        하는 피 튀기는 갈등 속에서 신비로운 나이트<br>
+                        엘프와 교활한 언데드, 거침없는 오크와 고결한<br>
+                        인간을 직접 지휘하십시오.</p>-->
+                    <ul class="section--blue wow fadeInUp" data-wow-delay="0.3s">
+                        <li>칼림도어와 로데론, 노스렌드를 비롯한 여러<br>
+                            세계에서 펼쳐지는 모험</li>
+                        <li>12마리의 우두머리가 기다리는 새로운 <br>
+                            공격대, 깨어난 도시 나이알로사에서 고대 신 <br>
+                            느조스와 그의 하수인들과 대결하세요.</li>
+                        <li>20명 이상의 워크래프트 역사 속 전설적인 <br>
+                            영웅과 악당을 직접 지휘하십시오. <br>
+                            경험치를 얻고, 레벨을 올리고, 강력한 기술을 <br>
+                            습득하고, 주위의 병력을 강화하십시오.</li>
+                            <p><a href="sub/sub3-1.html">더 많은 이야기 보러가기 &gt;</a></p>
+                    </ul>
+                    
+                    
+                </div>
+                <div class="media3">
+                    <video class="video section--blue wow  fadeInUp" data-wow-delay="0.9s" loop autoplay muted poster="media/Chanel.jpg">
+                        <source src="media2/s4_2.mp4">
+                        </source>
+                    </video>
+
+                </div>
+                <p class="tr">캠페인 미리보기</p>
+            </div>
+        </section>
+
+        <section id="sec4" class="page4">
+            <div id="page4" class="pg">
+                <div class="page4_inner">
+                    <h2><img src="images/sec4_logo.png" alt="sec4_logo" class="section--blue wow fadeInDown" data-wow-delay="0.3s"></h2>
+                    <h3 class="section--blue wow fadeInLeft">전설을 다시 플레이 하십시오</h3>
+                    <p class="section--blue wow fadeInLeft" data-wow-delay="0.3s">천둥 같은 전쟁의 북소리가 다시 한 번 울려퍼집니다...<br>
+                        잃어버린 시대의 아제로스로 돌아가 전쟁에 휩싸인 <br>
+                        세계의 불후의 이야기를 경험하십시오.</p>
+                    <p><span class="section--blue wow fadeInLeft" data-wow-delay="0.9s"><a href="#">자세히 보기</a></span></p>
+
+                </div>
+            </div>
+            <div class="sec4_inner2 rrr2">
+
+
+
+            </div>
+        </section>
+
+        <section id="sec5" class="page5 box">
+            <div id="page5" class="pg best_bg">
+                <p class="section--blue wow fadeInUp">블리자드샵</p>
+                <h2 class="section--blue wow fadeInUp" data-wow-delay="0.3s">즐거운 쥐의 해 맞이하세요</h2>
+                <p class="section--blue wow fadeInUp" data-wow-delay="0.3s">아제로스 최초의 하늘을 나는 쥐를 타고 비취 날개로 날아오르며<br> 즐거운 설날을 맞이하세요. 정해진 기간 동안 180일 게임 시간을<br>구매하면 장난꾸러기 끽끽이 탈것을 무료로 획득할 수 있습니다.</p>
+
+                <div class="page5_inner">
+                    <div class="section--blue wow fadeInDown" data-wow-delay="0.8s">
+                        <div class="page5_inner_inner page5_inner_inner1">
+                            <a href="#"><img src="images/shop1.jpg" alt="shop img1"></a>
+                            <ul>
+                                <li><a href="#">월드 오브 워크래프트®:<br>
+                                        구매 상품</a></li>
+                                <li>월드 오브 워크래프트와 WoW 클래식을
+                                    모두 플레이하세요</li>
+                                <li>\7,040 부터</li>
+                            </ul>
+                        </div>
+                        <div class="page5_inner_inner page5_inner_inner2">
+                            <a href="#"><img src="images/shop2.jpg" alt="shop img2"></a>
+                            <ul>
+                                <li><a href="#">교활대장 찍찍이<br>
+                                    </a></li>
+                                <li>월드 오브 워크래프트와 WoW 클래식을
+                                    모두 플레이하세요</li>
+                                <li>\25,000</li>
+                            </ul>
+                        </div>
+                        <div class="page5_inner_inner page5_inner_inner3">
+                            <a href="#"><img src="images/shop3.jpg" alt="shop img3"></a>
+                            <ul>
+                                <li><a href="#">월드 오브 워크래프트®:<br>
+                                        구매 상품</a></li>
+                                <li>실바나스 윈드러너 피규어를 구입하세요</li>
+                                <li>\511,500 부터</li>
+                            </ul>
+                        </div>
+
+                        <p class="more"><a href="#">더 많은 상품 보기 &gt;</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sec6" class="page6">
+
+            <div id="page6" class="pg section--blue wow fadeIn" data-wow-delay="0.3s">
+                <p class="section--blue wow fadeInUp" data-wow-delay="0.3s">새소식</p>
+                <h2 class="section--blue wow fadeInUp" data-wow-delay="0.6s">느조스의 환영이 출시되었습니다!</h2>
+                <p class="section--blue wow fadeInUp" data-wow-delay="0.8s">아제로스에는 여러분이 필요합니다 전장의 긴급 소집에 응하세요!</p>
+
+                <div class="page6_inner">
+                    <div class="section--blue wow fadeInDown" data-wow-delay="0.8s">
+                        <div class="page6_inner_inner page6_inner_inner1">
+                            <a href="#"><img src="images/news1.jpg">
+                                <p>월드 오브 워크래프트 15주년을 함께 축하해주세요!</p>
+                            </a>
+                        </div>
+
+                        <div class="page6_inner_inner page6_inner_inner2">
+                            <a href="#"><img src="images/news2.jpg">
+                                <p>신규 동맹 종족 미리 보기: 불페라와 기계노움</p>
+                            </a>
+                        </div>
+                        <div class="page6_inner_inner page6_inner_inner3">
+                            <a href="#"><img src="images/news3.jpg">
+                                <p>느조스의 환영: 습격과 공포의 환영 미리 보기</p>
+                            </a>
+                        </div>
+                        <div class="page6_inner_inner page6_inner_inner4">
+                            <a href="#"><img src="images/news4.jpg">
+                                <p>격전의 아제로스 대규모 패치 직업가이드!</p>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+                </div> <!-- page6_inner // -->
+            </div> <!-- page6 // -->
+        </section> <!-- sec6 // -->
+
+    </div> <!-- wrap // -->
+
+    <script>
+        $(document).ready(function() {
+            $('.gnb a, .gnb_r a').click(function(e) {
+                $.scrollTo(this.hash || 0, 600);
+                e.preventDefault();
+            });
+        });
+
+    </script>
+
+    <!-- 애니메이션 효과 js -->
+    <script src="mainjs/wow.js"></script>
+    <script>
+        wow = new WOW({
+            animateClass: 'animated',
+            offset: 100
+        });
+        wow.init();
+
+    </script>
+</body>
+
+</html>
